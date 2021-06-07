@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="isnieto" />
+    <meta name="generator" content="projecs repo" />
+    <title>Code and Projects: Ismael Nieto</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <link href="loader.css" rel="stylesheet" i />
+
+    <meta name="theme-color" content="#7952b3" />
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="signup.css" rel="stylesheet" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted = false;</script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function (e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Your submission has been processed...');
+        });
+    </script>
+</head>
+
+<body class="text-center">
+    <main class="form-signup">
+        <div class="d-flex justify-content-center p-5">
+            <div class="progress-5"></div>
+        </div>
+
+        <h1 class="p-3 w-100">My site is comming soon</h1>
+        <form name="gform" id="gform" enctype="text/plain" action="https://forms.gle/61obsmx6N5aKkM4X9">
+
+            <h1 class="h3 mb-3 fw-normal">Notify me when it's ready</h1>
+
+            <div class="form-floating p-1">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Enter Your Email Address"
+                    value="Send Email" onclick="sendEmail()" />
+            </div>
+
+            <button class="w-75 btn btn-lg btn-primary" type="submit">Sign in</button>
+
+        </form>
+    </main>
+
+
+</body>
+
+</html>
