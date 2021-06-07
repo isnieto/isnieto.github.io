@@ -46,16 +46,22 @@
         </div>
 
         <h1 class="p-3 w-100">My site is comming soon</h1>
-        <form name="gform" id="gform" enctype="text/plain" action="https://forms.gle/61obsmx6N5aKkM4X9">
+        <form name="gform" id="gform" enctype="text/plain" action="https://formspree.io/f/xnqldeno" method="POST">
 
             <h1 class="h3 mb-3 fw-normal">Notify me when it's ready</h1>
 
             <div class="form-floating p-1">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Enter Your Email Address"
+                <input type="email"    name="_replyto" class="form-control" id="floatingInput" placeholder="Enter Your Email Address"
                     value="Send Email" onclick="sendEmail()" />
             </div>
 
-            <button class="w-75 btn btn-lg btn-primary" type="submit">Sign in</button>
+            <button class="w-75 btn btn-lg btn-primary" type="submit">Send</button>
+
+
+            <!-- your other form fields go here -->
+
+            <button type="submit">Send</button>
+        </form>
 
         </form>
     </main>
