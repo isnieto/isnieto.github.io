@@ -46,16 +46,24 @@
         </div>
 
         <h1 class="p-3 w-100">My Porfolio comming soon!</h1>
-        <form name="gform" id="gform" enctype="text/plain" action="https://formspree.io/f/xnqldeno" method="POST">
+        
+<form
+action="https://formspree.io/f/xnqldeno"
+method="POST"
+>
+<label>
+  Your email:
+  <input type="email" name="_replyto">
+</label>
+<label>
+  Your message:
+  <textarea name="message"></textarea>
+</label>
 
-            <h1 class="h3 mb-3 fw-normal text-success">Do you want to be notified when it's ready?</h1>
+<!-- your other form fields go here -->
 
-            <div class="form-floating p-1">
-                <input type="email" name="_replyto" class="form-control" id="floatingInput"/>
-            </div>
-
-            <button type="submit" class="w-75 btn btn-lg btn-warning">Send</button>
-        </form>
+<button type="submit">Send</button>
+</form>
 
     </main>
 
