@@ -29,6 +29,10 @@
       user-select: none;
     }
 
+    .col {
+      border: 1px solid grey
+    }
+
     .vertical {
       border-left: 2px solid #ffc107;
       height: 80%;
@@ -61,180 +65,201 @@
 
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="home" viewBox="0 0 16 16">
+    <symbol id="gear-wheel" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
       <path
-        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+        d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434l.071-.286zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5zm0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78h4.723zM5.048 3.967c-.03.021-.058.043-.087.065l.087-.065zm-.431.355A4.984 4.984 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8 4.617 4.322zm.344 7.646.087.065-.087-.065z" />
     </symbol>
-    <symbol id="speedometer2" viewBox="0 0 16 16">
+    <symbol id="speedometer2" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
       <path
-        d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+        d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z" />
       <path fill-rule="evenodd"
-        d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" />
+        d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z" />
     </symbol>
-    <symbol id="table" viewBox="0 0 16 16">
+    <symbol id="tools" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
       <path
-        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
+        d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z" />
     </symbol>
-    <symbol id="people-circle" viewBox="0 0 16 16">
+    <symbol id="people-circle" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
       <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
       <path fill-rule="evenodd"
         d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
     </symbol>
-    <symbol id="grid" viewBox="0 0 16 16">
+    <symbol id="envelop" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
       <path
-        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
     </symbol>
   </svg>
   <main>
     <div class="container py-4">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded" aria-label="Twelfth navbar example">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
-              aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
-              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <li>
-                  <a href="#" class="nav-link text-secondary">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                      <use xlink:href="#home" />
-                    </svg>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                      <use xlink:href="#speedometer2" />
-                    </svg>
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                      <use xlink:href="#table" />
-                    </svg>
-                    Skills
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                      <use xlink:href="#grid" />
-                    </svg>
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                      <use xlink:href="#people-circle" />
-                    </svg>
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <header class="text-center">
+        <div class="p-5 mb-4 bg-light rounded-3">
+          <div class="container-fluid py-5">
+            <h2>Be welcome to my porfolio!</h2>
+            <h1 class="display-5 fw-bold">My name is Ismael Nieto.</h1>
+            <h3>I am full-stack developer with many interests <br>and always eager
+              to learn new things.</h3>
+            <br>
+            <p class="fs-4 text-center"> Make yourself at home and take a look. If any question, feel free to
+              <a href="#">contact</a> me.
+            </p>
           </div>
-        </nav>
-      </header>
-
-      <div class="p-5 mb-4 bg-light rounded-3">
-        <div class="container-fluid py-5">
-          <h2>Hey, Be welcome!</h2>
-          <h1 class="display-5 fw-bold">My name is Ismael Nieto.</h1>
-          <h3>I am full-stack developer with many interests and always eager
-            to learn new things.</h3>
-          <p class="col-md-8 fs-4"> Make yourself at home and look around. I hope you find what you are looking for.
-            <br>At lease, you will find out more about me and background in the following content ;-).
-          </p>
-          <button class="btn btn-primary btn-lg" type="button">Any question?</button>
-        </div>
-      </div>
-
-      <!-- Content -->
-      <div class="container" style="border: 1px solid red">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item col-4 p-5" role="presentation">
-            <button class="nav-link active" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about"
-              type="button" role="tab" aria-controls="pills-about" aria-selected="true"><span>About</span><br>
-              <h3>"Long story Short"</h3>
-            </button>
-          </li>
-          <li class="nav-item  col-4 p-5" role="presentation">
-            <button class="nav-link" id="pills-project-tab" data-bs-toggle="pill" data-bs-target="#pills-project"
-              type="button" role="tab" aria-controls="pills-project" aria-selected="false"><span>Projects</span><br>
-              <h3>"Simplicity over Complexity"</h3>
-            </button>
-          </li>
-          <li class="nav-item  col-4 p-5" role="presentation">
-            <button class="nav-link" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills"
-              type="button" role="tab" aria-controls="pills-skills" aria-selected="false"><span>Skills</span><br>
-              <h3>"Jack of all trades"</h3>
-            </button>
-          </li>
-
-        </ul>
-        <!--  1 Tab -->
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
-            <div class="h-100 p-5 text-white bg-dark rounded-3">
-              <h2>My leitmotiv: Life is a learning process. </h2>
-              <p>I share the core values of agile phylosophy:</p>
-              <ul>
-                <li>Focus on individuals and interactions</li>
-                <li>Focus on individuals and interactions</li>
-                <li>value pragmatism over idealism</li>
-                <li>simplicity over complexity</li>
-                <li>Technological agnosticism over fundamentalism</li>
-                <li>Motivation and collaboration</li>
-                <li>Flexibility and open to change</li>
-              </ul>
-            </div>
-          </div>
-          <!--  2 Tab -->
-          <div class="tab-pane fade" id="pills-project" role="tabpanel" aria-labelledby="pills-project-tab">
-            <div class="h-100 p-5 bg-light border rounded-3">
-              <h2>I share the core values of agile phylosophy</h2>
-              <ul>
-                <li>Focused on working code and continous improvement.</li>
-                <li>Working collaboratively with clients and colleagues.</li>
-                <li>Constant Communication with all parts.</li>
-                <li>Staying open and ready to take on changing factors. </li>
-                <li>Keeping things simple.</li>
-              </ul>
-
-            </div>
-          </div>
-          <!--  3 Tab -->
-          <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab">
-            <div class="col-md-5">
-              <div class="h-100 p-5 bg-light border rounded-3">
-                <p>(Añadir un mochileo escalando una montaña). Continously adding more items to my technological
-                  BackPack</p>
-                <h2>Technological agnosticism over fundamentalism</h2>
-                <ul>
-                  <li>1. Css-HTML-Bootstrap-JS-SQL</li>
-                  <li>2. + Python, R, </li>
-                  <li>3. JS + NodeJs + React - MongoDB</li>
-
+          <nav class="navbar navbar-expand-lg navbar-light bg-light rounded ">
+            <div class="container-fluid bs-warning ">
+              <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item p-5">
+                    <a class="nav-link" aria-current="page" data-bs-toggle="modal" data-bs-target="#projectsModal">
+                      <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                        <use xlink:href="#gear-wheel" />
+                      </svg>
+                      Projects</a>
+                  </li>
+                  <li class="nav-item p-5">
+                    <a class="nav-link" href="#">
+                      <svg class="bi d-block mx-auto mb-1" width="24" height="24" data-bs-toggle="modal"
+                        data-bs-target="#aboutModal">
+                        <use xlink:href="#people-circle" />
+                      </svg>
+                      About</a>
+                  </li>
+                  <li class="nav-item p-5">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#skillsModal">
+                      <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                        <use xlink:href="#speedometer2" />
+                      </svg>
+                      Skills</a>
+                  </li>
+                  <li class="nav-item p-5">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                      <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                        <use xlink:href="#tools" />
+                      </svg>
+                      Sandbox</a>
+                  </li>
+                  <li class="nav-item p-5">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal"
+                      data-bs-target="#contactModal">
+                      <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                        <use xlink:href="#envelop" />
+                      </svg>
+                      Contact</a>
+                  </li>
                 </ul>
               </div>
             </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Modal Projects-->
+      <div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="projectsModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
           </div>
         </div>
-
-
-
-
       </div>
-
-
-
+      <!-- About Projects-->
+      <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="aboutModalLabel">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#people-circle" />
+                </svg>About me * Long Story Short 
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <h2>My credo: Life is a learning process. </h2>
+                <p>I share the core values of agile phylosophy:</p>
+                <ul>
+                  <li>Focus on individuals and interactions</li>
+                  <li>value pragmatism over idealism</li>
+                  <li>simplicity over complexity</li>
+                  <li>Technological agnosticism over fundamentalism</li>
+                  <li>Motivation and collaboration</li>
+                  <li>Flexibility and open to change</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Skills Projects-->
+      <div class="modal fade" id="skillsModal" tabindex="-1" aria-labelledby="skillsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="skillsModalLabel">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#speedometer2" />
+                </svg> My Skills * Jack of all trades
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <h2>My coding principles:</h2>
+                <div class="row text-center">
+                  <div class="col p-5">Clean code and best practices</div>
+                  <div class="col p-5">Keep things simple</div>
+                  <div class="col p-5">Make things work</div>
+                  <div class="col p-5">Continous improvement</div>
+                  <div class="col p-5">User-fliendly</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Contact -->
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">New message</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <footer class="pt-3 mt-4 text-muted border-top">
         &copy; 2021
@@ -248,7 +273,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-
+  <!-- https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js -->
   <script src="js/docs.min.js"></script>
 
 </body>
