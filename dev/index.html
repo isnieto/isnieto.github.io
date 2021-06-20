@@ -20,46 +20,6 @@
   <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
   <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
   <meta name="theme-color" content="#7952b3">
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    .col {
-      border: 1px solid grey
-    }
-
-    .vertical {
-      border-left: 2px solid #ffc107;
-      height: 80%;
-      position: absolute;
-      left: 50%;
-      visibility: visible;
-
-    }
-
-    .col-sm {
-      border: 1px solid #999;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-
-      @media (min-width: 576px) {
-        .vertical-small {
-          visibility: hidden;
-        }
-      }
-
-    }
-  </style>
-
 
 </head>
 
@@ -96,13 +56,12 @@
           <div class="container-fluid py-5">
             <h2>Be welcome to my porfolio!</h2>
             <h1 class="display-5 fw-bold">My name is Ismael Nieto.</h1>
-            <h3>I am full-stack developer with many interests <br>and always eager
+            <h3>A full-stack developer with many interests <br>and always eager
               to learn new things.</h3>
             <br>
-            <p class="fs-4 text-center"> Make yourself at home and take a look. If any question, feel free to
-              <a href="#">contact</a> me.
-            </p>
+            <p class="fs-4 text-center"> Make yourself at home and take a look.</p>
           </div>
+          <!-- Navigation -->
           <nav class="navbar navbar-expand-lg navbar-light bg-light rounded ">
             <div class="container-fluid bs-warning ">
               <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
@@ -130,15 +89,14 @@
                       Skills</a>
                   </li>
                   <li class="nav-item p-5">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#sandboxModal">
                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                         <use xlink:href="#tools" />
                       </svg>
                       Sandbox</a>
                   </li>
                   <li class="nav-item p-5">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal"
-                      data-bs-target="#contactModal">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">
                       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                         <use xlink:href="#envelop" />
                       </svg>
@@ -156,11 +114,104 @@
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="projectsModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="projectsModalLabel">
+                <svg class="bi mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#gear-wheel" />
+                </svg>
+                "Action, go!" <strong>&#183;</strong> Projects
+              </h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              ...
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <!-- First project -->
+                    <div class="col">
+                      <div class="card" style="width: 18rem;">
+                        <img src="img/interkultur-schueleraustausch.org.png" class="card-img-top"
+                          alt="webseite-interkultur-schueleraustausch">
+                        <div class="card-body">
+                          <h5 class="card-title">InterKultur</h5>
+                          <p class="card-text">"Business Website Type" </p>
+                          <p><strong>Design:</strong> modest and functional. A trustworthy online
+                            representation of the
+                            company providing all the details that customers require. </p>
+                          <p><strong>Purpose:</strong> provide information on a the services in the most
+                            favorable way to
+                            attract potential customers and
+                            to show its advantages and best characteristics. </p>
+                          <p><strong>Target:</strong> german market</p>
+                          <p><strong>Content:</strong> Landing page, About Us, Services/Products page, FAQ
+                            page,
+                            Testimonials/Reviews page,
+                            Contact page</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">HTML</li>
+                          <li class="list-group-item">CSS</li>
+                          <li class="list-group-item">Bootstrap</li>
+                          <li class="list-group-item">Javascript</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="https://interkultur-schueleraustausch.org" target="blank"
+                            class="card-link btn btn-outline-dark text-center" role="button">View</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Second project -->
+                    <div class="col">
+                      <div class="card" style="width: 18rem;">
+                        <img src="img/interhispania-logo.jpg" class="card-img-top" alt="webseite-interhispania-logo">
+                        <div class="card-body">
+                          <h5 class="card-title">InterHispania</h5>
+                          <p class="card-text">"Promo Website Type" </p>
+                          <p><strong>Design:</strong> be stylish and vivid</p>
+                          <p><strong>Purpose:</strong> encouraging the visitor to perform the desired action:
+                            sign up for
+                            a course tellingabout a
+                            product or service, generate interest and a desire to make a purchase.</p>
+                          <p><strong>Content:</strong> a one-pager with a clear logical structure.</p>
+                          <p><strong>Target:</strong> spanish market</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">HTML</li>
+                          <li class="list-group-item">CSS</li>
+                          <li class="list-group-item">Bootstrap</li>
+                          <li class="list-group-item">Javascript</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="http://interhipania.es" target="blank"
+                            class="card-link btn btn-outline-dark text-center" role="button">View</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Third project -->
+                    <div class="col">
+                      <div class="card" style="width: 18rem;">
+                          <img src="img/logo-inbound-espana.png" class="card-img-top" alt="logo-inbound-espana">
+                          <div class="card-body">
+                              <h5 class="card-title">Inbound</h5>
+                              <p class="card-text">"Business Website Type" </p>
+                              <p><strong>Design:</strong> basic and straightforward </p>
+                              <p><strong>Purpose:</strong> Simple to set up with lower mantainance. The official site
+                                  of the
+                                  company. </p>
+                          </div>
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">HTML</li>
+                              <li class="list-group-item">CSS</li>
+                              <li class="list-group-item">ReactJS</li>
+                          </ul>
+                          <div class="card-body">
+                              <a href="http://inbound.es" target="blank"
+                                  class="card-link btn btn-outline-dark text-center" role="button">View</a>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -169,22 +220,26 @@
           </div>
         </div>
       </div>
+
+
+
       <!-- About Projects-->
       <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="aboutModalLabel">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+              <h5 class="modal-title" id="projectsModalLabel">
+                <svg class="bi mx-auto mb-1" width="24" height="24">
                   <use xlink:href="#people-circle" />
-                </svg>About me * Long Story Short 
+                </svg>
+                "Long Story Short" <strong>&#183;</strong> About
               </h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="container">
                 <h2>My credo: Life is a learning process. </h2>
-                <p>I share the core values of agile phylosophy:</p>
+                <p>We live in a dynamic reality that changes all the time.</p>
                 <ul>
                   <li>Focus on individuals and interactions</li>
                   <li>value pragmatism over idealism</li>
@@ -207,10 +262,11 @@
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="skillsModalLabel">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+              <h5 class="modal-title" id="projectsModalLabel">
+                <svg class="bi mx-auto mb-1" width="24" height="24">
                   <use xlink:href="#speedometer2" />
-                </svg> My Skills * Jack of all trades
+                </svg>
+                "Jack-of-all-trades" <strong>&#183;</strong> Skills
               </h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -233,12 +289,40 @@
           </div>
         </div>
       </div>
+      <!--Sandbox-->
+      <div class="modal fade" id="sandboxModal" tabindex="-1" aria-labelledby="sandboxModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="sandboxModalLabel">
+                <svg class="bi mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#tools" />
+                </svg>
+                Github Repos <strong>&#183;</strong> Sandbox
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <h2>Sandbox projects in githbu </h2>
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Modal Contact -->
       <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="contactModalLabel">New message</h5>
+              <h5 class="modal-title" id="contactModalLabel"><svg class="bi mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#envelop" />
+                </svg> New message</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
