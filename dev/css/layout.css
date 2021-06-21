@@ -1,3 +1,6 @@
+.bg-black{
+  background-color: black;
+}
 /* Navigation*/
 
 .nav-item::after {
