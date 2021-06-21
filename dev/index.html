@@ -12,6 +12,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="./css/bootstrap.css" rel="stylesheet">
+  <link href="./css/layout.css" rel="stylesheet">
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
   <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -20,111 +21,7 @@
   <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
   <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
   <meta name="theme-color" content="#7952b3">
-  <style>
-    .nav-item::after {
-      content: '';
-      display: block;
-      width: 0px;
-      height: 2px;
-      background: #fec400;
-      transition: 0.4s
-    }
 
-    .nav-item:hover::after {
-      width: 100%
-    }
-
-    .navbar-dark .navbar-nav .active>.nav-link,
-    .navbar-dark .navbar-nav .nav-link.active,
-    .navbar-dark .navbar-nav .nav-link.show,
-    .navbar-dark .navbar-nav .show>.nav-link,
-    .navbar-dark .navbar-nav .nav-link:focus,
-    .navbar-dark .navbar-nav .nav-link:hover {
-      color: #fec400
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    .zoom {
-      padding: 50px;
-      transition: transform .2s;
-      width: 200px;
-      height: 200px;
-      margin: 0 auto;
-    }
-
-    .zoom:hover {
-      -ms-transform: scale(1.5);
-      /* IE 9 */
-      -webkit-transform: scale(1.5);
-      /* Safari 3-8 */
-      transform: scale(1.5);
-    }
-    
-.text {
-  width: 450px;
-  top: 30%;
-  margin-top: -20px;
-}
-
-p {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
-}
-
-.word {
-  position: absolute;
-  width: 220px;
-  opacity: 0;
-}
-
-.letter {
-  display: inline-block;
-  position: relative;
-  float: left;
-  transform: translateZ(25px);
-  transform-origin: 50% 50% 25px;
-}
-
-.letter.out {
-  transform: rotateX(90deg);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.letter.behind {
-  transform: rotateX(-90deg);
-}
-
-.letter.in {
-  transform: rotateX(0deg);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.wisteria {
-  color: #8e44ad;
-}
-
-.belize {
-  color: #2980b9;
-}
-
-.pomegranate {
-  color: #c0392b;
-}
-
-.green {
-  color: #16a085;
-}
-
-.midnight {
-  color: #2c3e50;
-}
-
-
-  </style>
 </head>
 
 <body>
@@ -163,18 +60,20 @@ p {
       <header class="text-center">
         <div class="p-5 mb-4 bg-light rounded-3">
           <div class="container-fluid py-5">
-            <h2>Be welcome to my porfolio!</h2>
-            <h1 class="display-5 fw-bold text">My name is [.
-                <span class="word wisteria">Ismael Nieto.</span>
-                <span class="word belize">wonderful.</span>
-                ]
-            </h1>
-            <h3>A full-stack developer with many interests <br>and always eager
-              to learn new things.</h3>
+            <p class="fs-4 text-center"> Be welcome to my porfolio!</p>
+            <h1 class="display-5 m-3">My name is <span class="fw-bold" id="remark">Ismael Nieto</span></h1>
+            <h3 class="text">A full-stack developer with many
+              <p>
+                <span class="word pink">interests</span>
+                <span class="word teal">skills</span>
+                <span class="word theme">experiences</span>
+              </p>
+            </h3>
+            <h3>and always eager to learn new things.</h3>
             <br>
             <p class="fs-4 text-center"> Make yourself at home and take a look.</p>
           </div>
-
+          <hr class="text-warning">
           <!-- Navigation -->
           <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
             <div class="container-fluid bs-warning">
@@ -217,7 +116,7 @@ p {
                       Contact</a>
                   </li>
                 </ul>
-               
+
               </div>
             </div>
           </nav>
@@ -242,82 +141,106 @@ p {
                 <div class="container-fluid">
                   <div class="row">
                     <!-- First project -->
-                    <div class="col">
-                      <div class="card" style="width: 18rem;">
-                        <img src="img/interkultur-schueleraustausch.org.png" class="card-img-top"
-                          alt="webseite-interkultur-schueleraustausch">
-                        <div class="card-body">
-                          <h5 class="card-title">InterKultur</h5>
-                          <p class="card-text">"Business Website Type" </p>
-                          <p><strong>Design:</strong> modest and functional. A trustworthy online
+                    <div class="col-md-12">
+                      <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col-md-6 p-4 d-flex flex-column position-static">
+                          <h3 class="mb-3 text-danger">Interkultur Schüleraustausch</h3>
+                          <p>"Business Website Type"</p>
+                          <p class="mb-3"><strong>Design:</strong> modest and functional. A trustworthy online
                             representation of the company providing all the details that customers require. </p>
-                          <p><strong>Purpose:</strong> provide information about the services and courses in the most
+                          <p class="mb-3"><strong>Purpose:</strong> provide information about the services and courses
+                            in the most
                             favorable way to attract potential customers and
                             to show its advantages and best characteristics. </p>
-                          <p><strong>Target:</strong> german market</p>
-                          <p><strong>Content:</strong> Landing page, About Us, Services/Products page, FAQ
-                            page,
-                            Testimonials/Reviews page,
-                            Contact page</p>
+                          <p class="mb-3"><strong>Target:</strong> german market</p>
+                          <p class="mb-3"><strong>Content:</strong> Landing page, About Us, Services/Products page, FAQ
+                            page, Testimonials/Reviews page, Contact page</p>
+                          <p class="mb-1"><strong>Technologies:</strong>
+                          <ul class="list-group list-group-horizontal m-3">
+                            <li class="list-group-item"><img src="img/html5.png" with="48" height="48" alt="icon-html">
+                            </li>
+                            <li class="list-group-item"><img src="img/css3.png" with="48" height="48" alt="icon-css">
+                            </li>
+                            </li>
+                            <li class="list-group-item"><img src="img/bootstrap.png" with="48" height="48"
+                                alt="icon-bootstrap"></li>
+                            </li>
+                            <li class="list-group-item"><img src="img/javascript.png" with="48" height="48"
+                                alt="icon-javascript"></li>
+                            </li>
+                          </ul>
                         </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">HTML</li>
-                          <li class="list-group-item">CSS</li>
-                          <li class="list-group-item">Bootstrap</li>
-                          <li class="list-group-item">Javascript</li>
-                        </ul>
-                        <div class="card-body">
-                          <a href="https://interkultur-schueleraustausch.org" target="blank"
-                            class="card-link btn btn-outline-dark text-center" role="button">View</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Second project -->
-                    <div class="col">
-                      <div class="card" style="width: 18rem;">
-                        <img src="img/interhispania-logo.jpg" class="card-img-top" alt="webseite-interhispania-logo">
-                        <div class="card-body">
-                          <h5 class="card-title">InterHispania</h5>
-                          <p class="card-text">"Promo Website Type" </p>
-                          <p><strong>Design:</strong> stylish and vivid</p>
-                          <p><strong>Purpose:</strong> encouraging the visitor to perform the desired action: sign up
-                            for a course. Also telling about benefits and advanages of the service
-                            generating interest and a desire to make a purchase.</p>
-                          <p><strong>Content:</strong> a one-pager with a clear logical structure.</p>
-                          <p><strong>Target:</strong> spanish market</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">HTML</li>
-                          <li class="list-group-item">CSS</li>
-                          <li class="list-group-item">Bootstrap</li>
-                          <li class="list-group-item">Javascript</li>
-                        </ul>
-                        <div class="card-body">
-                          <a href="http://interhipania.es" target="blank"
-                            class="card-link btn btn-outline-dark text-center" role="button">View</a>
+                        <div class="col-auto d-none d-lg-block m-1 p-2">
+                          <a href="https://interkultur-schueleraustausch.org" target="blank">
+                            <img src="img/interkultur.webp" class="card-img-top" alt="screenshot-interkultur">
+                          </a>
                         </div>
                       </div>
                     </div>
+                    <!-- 2nd project -->
+                    <div class="col-md-12">
+                      <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col-md-6 p-4 d-flex flex-column position-static">
+                          <h3 class="mb-3 text-info">Interhispania</h3>
+                          <p class="m-1"><em>"Promo Website Type"</em> </p>
+                          <p class="mb-3"><strong>Design:</strong> stylish and vivid </p>
+                          <p class="mb-3"><strong>Purpose:</strong> encouraging the visitor to perform the desired
+                            action: sign up
+                            for a course. Also telling about benefits and advanages of the service </p>
+                          <p class="mb-3"><strong>Target:</strong> spanish market</p>
+                          <p class="mb-3"><strong>Content:</strong>a one-pager with a clear logical structure.</p>
+                          <p class="mb-1"><strong>Technologies:</strong>
+                          <ul class="list-group list-group-horizontal m-3">
+                            <li class="list-group-item"><img src="img/html5.png" with="48" height="48" alt="icon-html">
+                            </li>
+                            <li class="list-group-item"><img src="img/css3.png" with="48" height="48" alt="icon-css">
+                            </li>
+                            </li>
+                            <li class="list-group-item"><img src="img/bootstrap.png" with="48" height="48"
+                                alt="icon-bootstrap"></li>
+                            </li>
+                            <li class="list-group-item"><img src="img/javascript.png" with="48" height="48"
+                                alt="icon-javascript"></li>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-auto d-none d-lg-block m-1 p-2">
+                          <a href="https://interhispania.es" target="blank">
+                            <img src="img/interhispania.logo.webp" class="card-img-top" alt="screenshot-interkultur">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
                     <!-- Third project -->
-                    <div class="col">
-                      <div class="card" style="width: 18rem;">
-                        <img src="img/logo-inbound-espana.png" class="card-img-top" alt="logo-inbound-espana">
-                        <div class="card-body">
-                          <h5 class="card-title">Inbound</h5>
-                          <p class="card-text">"Business Website Type" </p>
-                          <p><strong>Design:</strong> basic and straightforward </p>
-                          <p><strong>Purpose:</strong> Simple to set up with lower mantainance. The official site
-                            of the
-                            company. </p>
+                    <div class="col-md-12">
+                      <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col-md-6 p-4 d-flex flex-column position-static">
+                          <h3 class="mb-3 text-default">Inbound España S.L.U.</h3>
+                          <p class="m-1"><em>"Bussiness Website Type"</em> </p>
+                          <p class="mb-3"><strong>Design:</strong> basic and straightforward</p>
+                          <p class="mb-3"><strong>Purpose:</strong> Simple to set up with lower mantainance. The official site of the company. </p>
+                          <p class="mb-3"><strong>Target:</strong> spanish market</p>
+                          <p class="mb-3"><strong>Content:</strong>a one-pager with a clear logical structure.</p>
+                          <p class="mb-1"><strong>Technologies:</strong>
+                          <ul class="list-group list-group-horizontal m-3">
+                            <li class="list-group-item"><img src="img/html5.png" with="48" height="48" alt="icon-html">
+                            </li>
+                            <li class="list-group-item"><img src="img/css3.png" with="48" height="48" alt="icon-css">
+                            </li>
+                            </li>
+                            <li class="list-group-item"><img src="img/react.png" with="48" height="48"
+                                alt="icon-react"></li>
+                            </li>
+                          </ul>
                         </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">HTML</li>
-                          <li class="list-group-item">CSS</li>
-                          <li class="list-group-item">ReactJS</li>
-                        </ul>
-                        <div class="card-body">
-                          <a href="http://inbound.es" target="blank" class="card-link btn btn-outline-dark text-center"
-                            role="button">View</a>
+                        <div class="col-auto d-none d-lg-block m-1 p-2">
+                          <a href="http:/inbound.es" target="blank">
+                            <img src="img/inbound.webp" class="card-img-top" alt="screenshot-interkultur">
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -493,7 +416,8 @@ p {
             </div>
             <div class="modal-body">
               <div class="container">
-                <h2>I enjoy building things just for fun or for practice. </h2>
+                <h2>I enjoy building things just for fun or for practice.
+                </h2>
               </div>
             </div>
             <div class="modal-footer">
@@ -562,69 +486,9 @@ p {
 
   </main>
 
-  <script>
-    var words = document.getElementsByClassName('word');
-var wordArray = [];
-var currentWord = 0;
-
-words[currentWord].style.opacity = 1;
-for (var i = 0; i < words.length; i++) {
-  splitLetters(words[i]);
-}
-
-function changeWord() {
-  var cw = wordArray[currentWord];
-  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
-  for (var i = 0; i < cw.length; i++) {
-    animateLetterOut(cw, i);
-  }
-  
-  for (var i = 0; i < nw.length; i++) {
-    nw[i].className = 'letter behind';
-    nw[0].parentElement.style.opacity = 1;
-    animateLetterIn(nw, i);
-  }
-  
-  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
-}
-
-function animateLetterOut(cw, i) {
-  setTimeout(function() {
-		cw[i].className = 'letter out';
-  }, i*80);
-}
-
-function animateLetterIn(nw, i) {
-  setTimeout(function() {
-		nw[i].className = 'letter in';
-  }, 340+(i*80));
-}
-
-function splitLetters(word) {
-  var content = word.innerHTML;
-  word.innerHTML = '';
-  var letters = [];
-  for (var i = 0; i < content.length; i++) {
-    var letter = document.createElement('span');
-    letter.className = 'letter';
-    letter.innerHTML = content.charAt(i);
-    word.appendChild(letter);
-    letters.push(letter);
-  }
-  
-  wordArray.push(letters);
-}
-
-changeWord();
-setInterval(changeWord, 4000);
-
-
-  </script>
   <script src="js/bootstrap.bundle.min.js"></script>
-
-
+  <script src="js/animation.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-  <!-- https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js -->
   <script src="js/docs.min.js"></script>
 
 </body>
