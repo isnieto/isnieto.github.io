@@ -28,72 +28,77 @@
 </head>
 
 <body>
-  <!-- Icons -->
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="gear-wheel" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
-      <path
-        d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434l.071-.286zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5zm0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78h4.723zM5.048 3.967c-.03.021-.058.043-.087.065l.087-.065zm-.431.355A4.984 4.984 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8 4.617 4.322zm.344 7.646.087.065-.087-.065z" />
-    </symbol>
-    <symbol id="speedometer2" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
-      <path
-        d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z" />
-      <path fill-rule="evenodd"
-        d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z" />
-    </symbol>
-    <symbol id="tools" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
-      <path
-        d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z" />
-    </symbol>
-    <symbol id="people-circle" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
-      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-      <path fill-rule="evenodd"
-        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-    </symbol>
-    <symbol id="envelop" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
-      <path
-        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-    </symbol>
-    <symbol id="check" viewBox="0 0 16 16">
-      <title>Check</title>
-      <path
-        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
-    </symbol>
-  </svg>
-  <main>
-    <!-- Header content -->
-    <div class="container py-4">
-      <header class="text-center">
-        <div class="p-5 mb-4 bg-light rounded-3">
-          <div class="container-fluid py-5">
-            <p class="fs-4 text-center"> Be welcome to my porfolio!</p>
-            <h1 class="display-5 m-3">My name is <span class="fw-bold" id="remark">Ismael Nieto</span></h1>
-            <h3 class="text">A full-stack developer with many
-              <p>
-                <span class="word pink">interests</span>
-                <span class="word teal">skills</span>
-                <span class="word theme">experiences</span>
-              </p>
-            </h3>
-            <h3>and always eager to learn new things.</h3>
-            <br>
-            <p class="fs-4 text-center"> Make yourself at home and take a look.</p>
-          </div>
-          
-          <hr class="text-warning">
+  <div class="container-fluid">
 
-          <!-- Navigation -->
-          <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content"
-              aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <!-- Brand -->
-            <a class="navbar-brand" href="#">Logo</a>
+    <!-- Icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="gear-wheel" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
+        <path
+          d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434l.071-.286zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5zm0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78h4.723zM5.048 3.967c-.03.021-.058.043-.087.065l.087-.065zm-.431.355A4.984 4.984 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8 4.617 4.322zm.344 7.646.087.065-.087-.065z" />
+      </symbol>
+      <symbol id="speedometer2" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
+        <path
+          d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+        <path fill-rule="evenodd"
+          d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z" />
+      </symbol>
+      <symbol id="tools" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
+        <path
+          d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z" />
+      </symbol>
+      <symbol id="people-circle" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+        <path fill-rule="evenodd"
+          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+      </symbol>
+      <symbol id="envelop" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
+        <path
+          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+      </symbol>
+      <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+      </symbol>
+    </svg>
+    <main>
+      <!-- Content -->
+      <div class="container py-5">
+        <header class="text-center">
+          <div class="p-5 mb-4  rounded-3 box">
+            <div class="container-fluid py-5">
+              <p class="fs-4 text-center"> Be welcome to my porfolio!</p>
+              <h1 class="display-5 m-3">My name is <span class="fw-bold" id="remark">Ismael Nieto</span></h1>
+              <h3 class="text">A full-stack developer with many
+                <p>
+                  <span class="word pink">interests</span>
+                  <span class="word teal">skills</span>
+                  <span class="word theme">experiences</span>
+                </p>
+              </h3>
+              <h3>and always eager to learn new things.</h3>
+              <br>
+              <p class="fs-4 text-center"> Make yourself at home and take a look.</p>
+            </div>
 
-            <!-- Links -->
-            <div class="container-fluid bs-warning" id="nav-content">
-              <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+            <hr class="text-warning">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content"
+                aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Brand -->
+              <a class="navbar-brand"><span
+                  class="d-md-none d-lg-block	d-lg-none d-xl-block xl	d-xl-none d-sm-none d-md-block">isNieto()
+                </span><i class="fa fa-home"></i></a>
+              </a>
+
+              <!-- Links -->
+              <div class="collapse navbar-collapse justify-content-md-center" id="nav-content">
                 <ul class="navbar-nav">
                   <li class="nav-item p-5 zoom">
                     <a class="nav-link" aria-current="page" data-bs-toggle="modal" data-bs-target="#projectsModal">
@@ -132,422 +137,421 @@
                       Contact</a>
                   </li>
                 </ul>
-
               </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+            </nav>
+          </div>
+        </header>
 
-      <!-- Modal Projects-->
-      <div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="projectsModalLabel">
-                <svg class="bi mx-auto mb-1" width="24" height="24">
-                  <use xlink:href="#gear-wheel" />
-                </svg>
-                "Action, go!" <strong>&#183;</strong> Projects
-              </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+        <!-- Modal Projects-->
+        <div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-xl">
             <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projectsModalLabel">
+                  <svg class="bi mx-auto mb-1" width="24" height="24">
+                    <use xlink:href="#gear-wheel" />
+                  </svg>
+                  "Action, go!" <strong>&#183;</strong> Projects
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <!-- First project -->
+                      <div class="col-md-12">
+                        <div
+                          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                          <div class="col-md-6 p-4 d-flex flex-column position-static">
+                            <h3 class="mb-3 text-danger">Interkultur Schüleraustausch</h3>
+                            <p>"Business Website Type"</p>
+                            <p class="mb-3"><strong>Design:</strong> modest and functional. A trustworthy online
+                              representation of the company providing all the details that customers require. </p>
+                            <p class="mb-3"><strong>Purpose:</strong> provide information about the services and courses
+                              in the most
+                              favorable way to attract potential customers and
+                              to show its advantages and best characteristics. </p>
+                            <p class="mb-3"><strong>Target:</strong> german market</p>
+                            <p class="mb-3"><strong>Content:</strong> Landing page, About Us, Services/Products page,
+                              FAQ
+                              page, Testimonials/Reviews page, Contact page</p>
+                            <p class="mb-1"><strong>Technologies:</strong>
+                            <ul class="list-group list-group-horizontal m-3">
+                              <li class="list-group-item"><img src="img/html5.png" with="48" height="48"
+                                  alt="icon-html">
+                              </li>
+                              <li class="list-group-item"><img src="img/css3.png" with="48" height="48" alt="icon-css">
+                              </li>
+                              </li>
+                              <li class="list-group-item"><img src="img/bootstrap.png" with="48" height="48"
+                                  alt="icon-bootstrap"></li>
+                              </li>
+                              <li class="list-group-item"><img src="img/javascript.png" with="48" height="48"
+                                  alt="icon-javascript"></li>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-auto d-none d-lg-block m-1 p-2">
+                            <a href="https://interkultur-schueleraustausch.org" target="blank">
+                              <img src="img/interkultur.webp" class="card-img-top" alt="screenshot-interkultur">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 2nd project -->
+                      <div class="col-md-12">
+                        <div
+                          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                          <div class="col-md-6 p-4 d-flex flex-column position-static">
+                            <h3 class="mb-3 text-info">Interhispania</h3>
+                            <p class="m-1"><em>"Promo Website Type"</em> </p>
+                            <p class="mb-3"><strong>Design:</strong> stylish and vivid </p>
+                            <p class="mb-3"><strong>Purpose:</strong> encouraging the visitor to perform the desired
+                              action: sign up
+                              for a course. Also telling about benefits and advanages of the service </p>
+                            <p class="mb-3"><strong>Target:</strong> spanish market</p>
+                            <p class="mb-3"><strong>Content:</strong>a one-pager with a clear logical structure.</p>
+                            <p class="mb-1"><strong>Technologies:</strong>
+                            <ul class="list-group list-group-horizontal m-3">
+                              <li class="list-group-item"><img src="img/html5.png" with="48" height="48"
+                                  alt="icon-html">
+                              </li>
+                              <li class="list-group-item"><img src="img/css3.png" with="48" height="48" alt="icon-css">
+                              </li>
+                              </li>
+                              <li class="list-group-item"><img src="img/bootstrap.png" with="48" height="48"
+                                  alt="icon-bootstrap"></li>
+                              </li>
+                              <li class="list-group-item"><img src="img/javascript.png" with="48" height="48"
+                                  alt="icon-javascript"></li>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-auto d-none d-lg-block m-1 p-2">
+                            <a href="https://interhispania.es" target="blank">
+                              <img src="img/interhispania.logo.webp" class="card-img-top" alt="screenshot-interkultur">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Third project -->
+                      <div class="col-md-12">
+                        <div
+                          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                          <div class="col-md-6 p-4 d-flex flex-column position-static">
+                            <h3 class="mb-3 text-default">Inbound España S.L.U.</h3>
+                            <p class="m-1"><em>"Bussiness Website Type"</em> </p>
+                            <p class="mb-3"><strong>Design:</strong> basic and straightforward</p>
+                            <p class="mb-3"><strong>Purpose:</strong> Simple to set up with lower mantainance. The
+                              official site of the company. </p>
+                            <p class="mb-3"><strong>Target:</strong> spanish market</p>
+                            <p class="mb-3"><strong>Content:</strong>a one-pager with a clear logical structure.</p>
+                            <p class="mb-1"><strong>Technologies:</strong>
+                            <ul class="list-group list-group-horizontal m-3">
+                              <li class="list-group-item"><img src="img/html5.png" with="48" height="48"
+                                  alt="icon-html">
+                              </li>
+                              <li class="list-group-item"><img src="img/css3.png" with="48" height="48" alt="icon-css">
+                              </li>
+                              </li>
+                              <li class="list-group-item"><img src="img/react.png" with="48" height="48"
+                                  alt="icon-react">
+                              </li>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-auto d-none d-lg-block m-1 p-2">
+                            <a href="http:/inbound.es" target="blank">
+                              <img src="img/inbound.webp" class="card-img-top" alt="screenshot-interkultur">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- About Projects-->
+        <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projectsModalLabel">
+                  <svg class="bi mx-auto mb-1" width="24" height="24">
+                    <use xlink:href="#people-circle" />
+                  </svg>
+                  "Long Story Short" <strong>&#183;</strong> About
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
               <div class="modal-body">
-                <div class="container-fluid">
-                  <div class="row">
-                    <!-- First project -->
-                    <div class="col-md-12">
-                      <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col-md-6 p-4 d-flex flex-column position-static">
-                          <h3 class="mb-3 text-danger">Interkultur Schüleraustausch</h3>
-                          <p>"Business Website Type"</p>
-                          <p class="mb-3"><strong>Design:</strong> modest and functional. A trustworthy online
-                            representation of the company providing all the details that customers require. </p>
-                          <p class="mb-3"><strong>Purpose:</strong> provide information about the services and courses
-                            in the most
-                            favorable way to attract potential customers and
-                            to show its advantages and best characteristics. </p>
-                          <p class="mb-3"><strong>Target:</strong> german market</p>
-                          <p class="mb-3"><strong>Content:</strong> Landing page, About Us, Services/Products page, FAQ
-                            page, Testimonials/Reviews page, Contact page</p>
-                          <p class="mb-1"><strong>Technologies:</strong>
-                          <ul class="list-group list-group-horizontal m-3">
-                            <li class="list-group-item"><img src="img/html5.png" with="48" height="48" alt="icon-html">
-                            </li>
-                            <li class="list-group-item"><img src="img/css3.png" with="48" height="48" alt="icon-css">
-                            </li>
-                            </li>
-                            <li class="list-group-item"><img src="img/bootstrap.png" with="48" height="48"
-                                alt="icon-bootstrap"></li>
-                            </li>
-                            <li class="list-group-item"><img src="img/javascript.png" with="48" height="48"
-                                alt="icon-javascript"></li>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block m-1 p-2">
-                          <a href="https://interkultur-schueleraustausch.org" target="blank">
-                            <img src="img/interkultur.webp" class="card-img-top" alt="screenshot-interkultur">
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- 2nd project -->
-                    <div class="col-md-12">
-                      <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col-md-6 p-4 d-flex flex-column position-static">
-                          <h3 class="mb-3 text-info">Interhispania</h3>
-                          <p class="m-1"><em>"Promo Website Type"</em> </p>
-                          <p class="mb-3"><strong>Design:</strong> stylish and vivid </p>
-                          <p class="mb-3"><strong>Purpose:</strong> encouraging the visitor to perform the desired
-                            action: sign up
-                            for a course. Also telling about benefits and advanages of the service </p>
-                          <p class="mb-3"><strong>Target:</strong> spanish market</p>
-                          <p class="mb-3"><strong>Content:</strong>a one-pager with a clear logical structure.</p>
-                          <p class="mb-1"><strong>Technologies:</strong>
-                          <ul class="list-group list-group-horizontal m-3">
-                            <li class="list-group-item"><img src="img/html5.png" with="48" height="48" alt="icon-html">
-                            </li>
-                            <li class="list-group-item"><img src="img/css3.png" with="48" height="48" alt="icon-css">
-                            </li>
-                            </li>
-                            <li class="list-group-item"><img src="img/bootstrap.png" with="48" height="48"
-                                alt="icon-bootstrap"></li>
-                            </li>
-                            <li class="list-group-item"><img src="img/javascript.png" with="48" height="48"
-                                alt="icon-javascript"></li>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block m-1 p-2">
-                          <a href="https://interhispania.es" target="blank">
-                            <img src="img/interhispania.logo.webp" class="card-img-top" alt="screenshot-interkultur">
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Third project -->
-                    <div class="col-md-12">
-                      <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col-md-6 p-4 d-flex flex-column position-static">
-                          <h3 class="mb-3 text-default">Inbound España S.L.U.</h3>
-                          <p class="m-1"><em>"Bussiness Website Type"</em> </p>
-                          <p class="mb-3"><strong>Design:</strong> basic and straightforward</p>
-                          <p class="mb-3"><strong>Purpose:</strong> Simple to set up with lower mantainance. The
-                            official site of the company. </p>
-                          <p class="mb-3"><strong>Target:</strong> spanish market</p>
-                          <p class="mb-3"><strong>Content:</strong>a one-pager with a clear logical structure.</p>
-                          <p class="mb-1"><strong>Technologies:</strong>
-                          <ul class="list-group list-group-horizontal m-3">
-                            <li class="list-group-item"><img src="img/html5.png" with="48" height="48" alt="icon-html">
-                            </li>
-                            <li class="list-group-item"><img src="img/css3.png" with="48" height="48" alt="icon-css">
-                            </li>
-                            </li>
-                            <li class="list-group-item"><img src="img/react.png" with="48" height="48" alt="icon-react">
-                            </li>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block m-1 p-2">
-                          <a href="http:/inbound.es" target="blank">
-                            <img src="img/inbound.webp" class="card-img-top" alt="screenshot-interkultur">
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- About Projects-->
-      <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="projectsModalLabel">
-                <svg class="bi mx-auto mb-1" width="24" height="24">
-                  <use xlink:href="#people-circle" />
-                </svg>
-                "Long Story Short" <strong>&#183;</strong> About
-              </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-6 m-2 text-warning bg-black">
-                  <p class="mp-4">
-                  <h2 class="fw-bold">My credo: Life is a learning process. </h2>
-                  <p>We live in a dynamic reality that changes all the time.</p>
-                  <ul>
-                    <li>Focus on individuals and interactions</li>
-                    <li>value pragmatism over idealism</li>
-                    <li>simplicity over complexity</li>
-                    <li>Technological agnosticism over fundamentalism</li>
-                    <li>Motivation and collaboration</li>
-                    <li>Flexibility and open to change</li>
-                  </ul>
-                  </p>
-                </div>
-                <div class="col m-2">
-                  <h2>My credo: Life is a learning process. </h2>
-                  <p>We live in a dynamic reality that changes all the time.</p>
-                  <ul>
-                    <li>Focus on individuals and interactions</li>
-                    <li>value pragmatism over idealism</li>
-                    <li>simplicity over complexity</li>
-                    <li>Technological agnosticism over fundamentalism</li>
-                    <li>Motivation and collaboration</li>
-                    <li>Flexibility and open to change</li>
-                  </ul>
-                </div>
-              </div>
-
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Skills Projects-->
-      <div class="modal fade" id="skillsModal" tabindex="-1" aria-labelledby="skillsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="projectsModalLabel">
-                <svg class="bi mx-auto mb-1" width="24" height="24">
-                  <use xlink:href="#speedometer2" />
-                </svg>
-                "Jack-of-all-trades" <strong>&#183;</strong> Skills
-              </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container">
-                <h2>My ground rules by coding:</h2>
-                <div class="row text-center">
-                  <div class="col p-4">1. Clean code and best practices</div>
-                  <div class="col p-4">2. Keep things simple</div>
-                  <div class="col p-4">3. Make things work</div>
-                  <div class="col p-4">4. Continous improvement</div>
-                  <div class="col p-4">5. User-fliendly</div>
-                </div>
-
-                <div class="table-responsive">
-                  <table class="table text-center">
-                    <thead>
-                      <tr>
-                        <th style="width: 34%;"></th>
-                        <th style="width: 22%;">FrontEnd</th>
-                        <th style="width: 22%;">BackEnd</th>
-                        <th style="width: 22%;">Others</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row" class="text-start">HTML</th>
-                        <td><svg class="bi" width="24" height="24">
-                            <use xlink:href="#check" />
-                          </svg></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="text-start">CSS</th>
-                        <td><svg class="bi" width="24" height="24">
-                            <use xlink:href="#check" />
-                          </svg></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="text-start">Bootstrap</th>
-                        <td><svg class="bi" width="24" height="24">
-                            <use xlink:href="#check" />
-                          </svg></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-
-                    <tbody>
-                      <tr>
-                        <th scope="row" class="text-start">NodeJS</th>
-                        <td><svg class="bi" width="24" height="24">
-                            <use xlink:href="#check" />
-                          </svg></td>
-                        <td><svg class="bi" width="24" height="24">
-                            <use xlink:href="#check" />
-                          </svg></td>
-                        <td><svg class="bi" width="24" height="24">
-                            <use xlink:href="#check" />
-                          </svg></td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="text-start">Sharing</th>
-                        <td></td>
-                        <td><svg class="bi" width="24" height="24">
-                            <use xlink:href="#check" />
-                          </svg></td>
-                        <td><svg class="bi" width="24" height="24">
-                            <use xlink:href="#check" />
-                          </svg></td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="text-start">Unlimited members</th>
-                        <td></td>
-                        <td><svg class="bi" width="24" height="24">
-                            <use xlink:href="#check" />
-                          </svg></td>
-                        <td><svg class="bi" width="24" height="24">
-                            <use xlink:href="#check" />
-                          </svg></td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="text-start">Extra security</th>
-                        <td></td>
-                        <td></td>
-                        <td><svg class="bi" width="24" height="24">
-                            <use xlink:href="#check" />
-                          </svg></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Sandbox-->
-      <div class="modal fade" id="sandboxModal" tabindex="-1" aria-labelledby="sandboxModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="sandboxModalLabel">
-                <svg class="bi mx-auto mb-1" width="24" height="24">
-                  <use xlink:href="#tools" />
-                </svg>
-                Personal projects & Repos <strong>&#183;</strong> Sandbox
-              </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container">
-                <div class="row g-5">
-                  <div class="col-md-6">
-                    <h2>Starter projects</h2>
-                    <p>Ready to beyond the starter template? Check out these open source projects that you can quickly
-                      duplicate to a new GitHub repository.</p>
-                    <ul class="icon-list">
-                      <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener"
-                          target="_blank">Bootstrap npm starter</a></li>
-                      <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
-                    </ul>
-                  </div>
-
-                  <div class="col-md-6">
-                    <h2>Guides</h2>
-                    <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-                    <ul class="icon-list">
-                      <li><a href="/docs/5.0/getting-started/introduction/">Bootstrap quick start guide</a></li>
-                      <li><a href="/docs/5.0/getting-started/webpack/">Bootstrap Webpack guide</a></li>
-                      <li><a href="/docs/5.0/getting-started/parcel/">Bootstrap Parcel guide</a></li>
-                      <li><a href="/docs/5.0/getting-started/build-tools/">Contributing to Bootstrap</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal Contact -->
-      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="contactModalLabel">
-                <svg class="bi mx-auto mb-1" width="24" height="24">
-                  <use xlink:href="#envelop" />
-                </svg>
-                ◦ Get in Touch with Me!
-              </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container">
-                <div class="row align-items-center g-lg-7 py-5">
-                  <div class="col-lg-7 text-center text-lg-start">
-                    <h1 class="display-4 fw-bold lh-1 mb-3">Go ahead and send me a message</h1>
-                    <p class="col-lg-10 fs-4">
+                <div class="row">
+                  <div class="col-6 m-2 text-warning bg-black">
+                    <p class="mp-4">
+                    <h2 class="fw-bold">My credo: Life is a learning process. </h2>
+                    <p>We live in a dynamic reality that changes all the time.</p>
                     <ul>
                       <li>Focus on individuals and interactions</li>
                       <li>value pragmatism over idealism</li>
                       <li>simplicity over complexity</li>
                       <li>Technological agnosticism over fundamentalism</li>
-                      </p>
+                      <li>Motivation and collaboration</li>
+                      <li>Flexibility and open to change</li>
+                    </ul>
+                    </p>
                   </div>
-                  <div class="col-md-10 mx-auto col-lg-5">
-                    <form class="p-4 p-md-5 border rounded-3 bg-light">
-                      <div class="form-floating mb-3">
-                        <input type="name" class="form-control" id="floatingName" placeholder="Your Name">
-                        <label for="floatingName">Name</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Your message...">Message...</textarea>
-                      </div>
-                      <button class="w-50 btn btn-lg btn-primary" type="submit">Send Message</button>
-                      <button class="w-25 btn btn-lg btn-secondary" type="submit">Clear</button>
-                    </form>
+                  <div class="col m-2">
+                    <h2>My credo: Life is a learning process. </h2>
+                    <p>We live in a dynamic reality that changes all the time.</p>
+                    <ul>
+                      <li>Focus on individuals and interactions</li>
+                      <li>value pragmatism over idealism</li>
+                      <li>simplicity over complexity</li>
+                      <li>Technological agnosticism over fundamentalism</li>
+                      <li>Motivation and collaboration</li>
+                      <li>Flexibility and open to change</li>
+                    </ul>
                   </div>
                 </div>
+
+
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
+        <!-- Skills Projects-->
+        <div class="modal fade" id="skillsModal" tabindex="-1" aria-labelledby="skillsModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projectsModalLabel">
+                  <svg class="bi mx-auto mb-1" width="24" height="24">
+                    <use xlink:href="#speedometer2" />
+                  </svg>
+                  "Jack-of-all-trades" <strong>&#183;</strong> Skills
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <h2>My ground rules by coding:</h2>
+                  <div class="row text-center">
+                    <div class="col p-4">1. Clean code and best practices</div>
+                    <div class="col p-4">2. Keep things simple</div>
+                    <div class="col p-4">3. Make things work</div>
+                    <div class="col p-4">4. Continous improvement</div>
+                    <div class="col p-4">5. User-fliendly</div>
+                  </div>
+
+                  <div class="table-responsive">
+                    <table class="table text-center">
+                      <thead>
+                        <tr>
+                          <th style="width: 34%;"></th>
+                          <th style="width: 22%;">FrontEnd</th>
+                          <th style="width: 22%;">BackEnd</th>
+                          <th style="width: 22%;">Others</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">HTML</th>
+                          <td><svg class="bi" width="24" height="24">
+                              <use xlink:href="#check" />
+                            </svg></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">CSS</th>
+                          <td><svg class="bi" width="24" height="24">
+                              <use xlink:href="#check" />
+                            </svg></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Bootstrap</th>
+                          <td><svg class="bi" width="24" height="24">
+                              <use xlink:href="#check" />
+                            </svg></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">NodeJS</th>
+                          <td><svg class="bi" width="24" height="24">
+                              <use xlink:href="#check" />
+                            </svg></td>
+                          <td><svg class="bi" width="24" height="24">
+                              <use xlink:href="#check" />
+                            </svg></td>
+                          <td><svg class="bi" width="24" height="24">
+                              <use xlink:href="#check" />
+                            </svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Sharing</th>
+                          <td></td>
+                          <td><svg class="bi" width="24" height="24">
+                              <use xlink:href="#check" />
+                            </svg></td>
+                          <td><svg class="bi" width="24" height="24">
+                              <use xlink:href="#check" />
+                            </svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Unlimited members</th>
+                          <td></td>
+                          <td><svg class="bi" width="24" height="24">
+                              <use xlink:href="#check" />
+                            </svg></td>
+                          <td><svg class="bi" width="24" height="24">
+                              <use xlink:href="#check" />
+                            </svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Extra security</th>
+                          <td></td>
+                          <td></td>
+                          <td><svg class="bi" width="24" height="24">
+                              <use xlink:href="#check" />
+                            </svg></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sandbox-->
+        <div class="modal fade" id="sandboxModal" tabindex="-1" aria-labelledby="sandboxModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="sandboxModalLabel">
+                  <svg class="bi mx-auto mb-1" width="24" height="24">
+                    <use xlink:href="#tools" />
+                  </svg>
+                  Personal projects & Repos <strong>&#183;</strong> Sandbox
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row g-5">
+                    <div class="col-md-6">
+                      <h2>Starter projects</h2>
+                      <p>Ready to beyond the starter template? Check out these open source projects that you can quickly
+                        duplicate to a new GitHub repository.</p>
+                      <ul class="icon-list">
+                        <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener"
+                            target="_blank">Bootstrap npm starter</a></li>
+                        <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                      <h2>Guides</h2>
+                      <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+                      <ul class="icon-list">
+                        <li><a href="/docs/5.0/getting-started/introduction/">Bootstrap quick start guide</a></li>
+                        <li><a href="/docs/5.0/getting-started/webpack/">Bootstrap Webpack guide</a></li>
+                        <li><a href="/docs/5.0/getting-started/parcel/">Bootstrap Parcel guide</a></li>
+                        <li><a href="/docs/5.0/getting-started/build-tools/">Contributing to Bootstrap</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Contact -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">
+                  <svg class="bi mx-auto mb-1" width="24" height="24">
+                    <use xlink:href="#envelop" />
+                  </svg>
+                  ◦ Get in Touch with Me!
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row align-items-center g-lg-7 py-5">
+                    <div class="col-lg-7 text-center text-lg-start">
+                      <h1 class="display-4 fw-bold lh-1 mb-3">Go ahead and send me a message</h1>
+                      <p class="col-lg-10 fs-4">
+                      <ul>
+                        <li>Focus on individuals and interactions</li>
+                        <li>value pragmatism over idealism</li>
+                        <li>simplicity over complexity</li>
+                        <li>Technological agnosticism over fundamentalism</li>
+                        </p>
+                    </div>
+                    <div class="col-md-10 mx-auto col-lg-5">
+                      <form class="p-4 p-md-5 border rounded-3 bg-light">
+                        <div class="form-floating mb-3">
+                          <input type="name" class="form-control" id="floatingName" placeholder="Your Name">
+                          <label for="floatingName">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <textarea class="form-control" placeholder="Your message...">Message...</textarea>
+                        </div>
+                        <button class="w-50 btn btn-lg btn-primary" type="submit">Send Message</button>
+                        <button class="w-25 btn btn-lg btn-secondary" type="submit">Clear</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
       </div>
 
-      <footer class="pt-3 mt-4 text-muted border-top">
-        &copy; 2021
-      </footer>
-    </div> <!-- End main-->
-
-  </main>
-
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/animation.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
-  </script>
-  <script src="js/docs.min.js"></script>
-
+    </main>
+    
+    <!-- Bundled -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+    </script>
+    <script src="js/animation.js"></script>
 </body>
 
 </html>
