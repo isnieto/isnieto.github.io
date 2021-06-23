@@ -65,7 +65,7 @@ p {
 }
 
 .remark {
-  background-color: black;
+  background-color: rgb(37, 37, 37);
   padding: 10px;
   color: #fec400;
 }
@@ -124,4 +124,5 @@ p {
 }
 
 
-/* images effects */
+/* icons effects */
+
