@@ -10,6 +10,13 @@ body {
 }
 
 /* Theme format*/
+.remark {
+  background-color: rgb(37, 37, 37);
+  margin: 5px;
+  padding: 5px;
+  color: #fec400;
+}
+
 .box{
   background-color: #e8ecef;
 }
@@ -18,13 +25,6 @@ body {
 }
 
 
-.-striped-bgs-nine {
-  background: #eee;
-  background-image: linear-gradient(45deg, rgba(0,0,0,.25) 25%, transparent 0, transparent 75%, rgba(0,0,0,.25) 0),
-  linear-gradient(45deg, rgba(0,0,0,.15) 25%, transparent 0, transparent 75%, rgba(0,0,0,.15) 0);
-  background-position: 0 0, 20px 20px;
-  background-size: 2px 2px;
-}
 
 /* Navigation*/
 
@@ -76,11 +76,6 @@ p {
   margin: 0;
 }
 
-.remark {
-  background-color: rgb(37, 37, 37);
-  padding: 10px;
-  color: #fec400;
-}
 
 /*Animation header*/
 
