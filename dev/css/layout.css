@@ -1,6 +1,31 @@
-.bg-black{
+/*Heading fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oxygen:wght@700&display=swap');
+
+.title {
+  font-family: 'Oxygen', sans-serif !important;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Theme format*/
+.remark {
+  background-color: rgb(37, 37, 37);
+  margin: 5px;
+  padding: 5px;
+  color: #fec400;
+}
+
+.box{
+  background-color: #e8ecef;
+}
+.bg-black {
   background-color: black;
 }
+
+
+
 /* Navigation*/
 
 .nav-item::after {
@@ -45,7 +70,19 @@
   transform: scale(1.5);
 }
 
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
 
+
+/*Animation header*/
+
+.text {
+  position: static;
+  margin-right: 7%;
+}
 
 p {
   display: inline-block;
@@ -53,62 +90,45 @@ p {
   margin: 0;
 }
 
-#remark{
-    background-color: black;
-    color:#fec400;
-    padding: 5px;
+.word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.theme {
+  color: #fd7e14;
+}
+
+.teal {
+  color: #20c997;
+}
+
+.pink {
+  color: #d63384;
 }
 
 
-/*Animation header*/
-
-.text {
-    position: static;
-    margin-right: 7%;
-  }
-  
-  p {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-  }
-  
-  .word {
-    position: absolute;
-    width: 220px;
-    opacity: 0;
-  }
-  
-  .letter {
-    display: inline-block;
-    position: relative;
-    float: left;
-    transform: translateZ(25px);
-    transform-origin: 50% 50% 25px;
-  }
-  
-  .letter.out {
-    transform: rotateX(90deg);
-    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-  
-  .letter.behind {
-    transform: rotateX(-90deg);
-  }
-  
-  .letter.in {
-    transform: rotateX(0deg);
-    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .theme {
-    color: #fd7e14 ;
-  }
-  
-  .teal {
-    color: #20c997;
-  }
-    
-  .pink {
-    color: #d63384;
-  }
+/* icons effects */
